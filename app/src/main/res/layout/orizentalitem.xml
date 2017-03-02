@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/hor_par"
+    android:background="@color/left_nav_drawer_main_color"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/hor_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/white_color"
+        android:text="hf"
+        />
+</RelativeLayout>
+

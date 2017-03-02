@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/left_nav_drawer_main_color">
+
+    <RelativeLayout
+        android:id="@+id/rl_menu_profile_info"
+        android:layout_width="fill_parent"
+        android:layout_height="180.0dip"
+        android:background="@color/tab_unselected"
+        android:paddingBottom="20.0dip"
+        android:paddingTop="20.0dip">
+
+        <com.actualmx.actualmxnew.utill.RoundedImageView
+            android:id="@+id/img_menu_profile"
+            android:layout_width="100.0dp"
+            android:layout_height="100.0dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile" />
+
+
+
+        <TextView
+            android:id="@+id/txt_menu_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_menu_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:drawablePadding="@dimen/detail_padding"
+            android:text="Change Profile image"
+            android:textColor="@color/filter_tab_text_color"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_menu_profile"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:src="@drawable/register"
+            android:layout_toRightOf="@+id/txt_menu_profile" />
+    </RelativeLayout>
+
+  <!--  <RelativeLayout
+        android:id="@+id/rl_settings"
+        android:layout_width="fill_parent"
+        android:layout_height="82.0dip"
+        android:layout_below="@+id/rl_menu_profile_info">
+
+        <LinearLayout
+            android:id="@+id/rl_language_content"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:background="@color/left_nav_drawer_main_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:id="@+id/txt_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/img_language_switch"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="Language"
+                android:textColor="@color/filter_tab_text_color"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/img_language_switch"
+                android:layout_width="80dp"
+                android:layout_height="22dp"
+                android:background="@drawable/edit_name"
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_settings_content"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_language_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/left_nav_drawer_main_color"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:id="@+id/txt_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Setting"
+                android:textColor="@color/filter_tab_text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2.0dip"
+                android:src="@drawable/placeholder" />
+        </RelativeLayout>
+    </RelativeLayout>-->
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_menu_profile_info"
+        android:background="@color/tab_unselected"
+        android:dividerHeight="1.0dip"
+        android:groupIndicator="@android:color/transparent" />
+
+   <!-- <RelativeLayout
+        android:id="@+id/rl_bookmarks"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/left_nav_drawer_main_color"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="10.0dip">
+
+      &lt;!&ndash;  <RelativeLayout
+            android:id="@+id/rl_bookmarks_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txt_bookmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15.0dip"
+                android:text="BOOKMARKS"
+                android:textColor="@color/filter_tab_text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_owel_white" />
+        </RelativeLayout>&ndash;&gt;
+    </RelativeLayout>-->
+</RelativeLayout>

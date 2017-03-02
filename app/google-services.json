@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "395403599836",
+    "firebase_url": "https://actualmx-f0389.firebaseio.com",
+    "project_id": "actualmx-f0389",
+    "storage_bucket": "actualmx-f0389.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395403599836:android:2be09948b2c620b7",
+        "android_client_info": {
+          "package_name": "com.actualmx.actualmxnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395403599836-l42shr9f614pnc8eb4d40qr60ec0epmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA16bLFyBh0m_x-l8aSSsyPlVTu2MzMZmQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

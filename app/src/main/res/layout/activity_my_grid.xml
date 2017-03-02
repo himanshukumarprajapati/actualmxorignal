@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spalsh_screen"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/header_main_page_layout"
+        android:id="@+id/include_DetailPage"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/otherGridRecucleView"
+            android:layout_width="match_parent"
+            android:layout_below="@id/include_DetailPage"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/kkkkk"
+           />
+    <LinearLayout
+        android:id="@+id/kkkkk"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/abc_action_bar_default_height_material">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizentalList"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>
